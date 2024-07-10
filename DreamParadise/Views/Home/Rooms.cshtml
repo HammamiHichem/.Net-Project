@@ -1,0 +1,73 @@
+@{
+    ViewData["Title"] = "Rooms";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Rooms.css">
+    <title>Rooms</title>
+</head>
+<body>
+    
+<div class="pricingTable">
+  <h2 class="pricingTable-title">Find a room that's right for you.</h2>
+  <ul class="pricingTable-firstTable">
+    <li class="pricingTable-firstTable_table">
+      <div class="pricingTable-firstTable_table__wrapper">
+        <h1 class="pricingTable-firstTable_table__header">Single Room</h1>
+      <p class="pricingTable-firstTable_table__pricing"><span>$</span><span>120</span><span>per night</span></p>
+     <div class="mt-4" >
+      <div style="margin-bottom: 60px;">
+           <ul class="pricingTable-firstTable_table__options " >
+        <li>1 Bed</li>
+        
+        <li>Free Wi-Fi</li>
+        
+        <li>Shared Bathroom</li>
+        
+        <li>Max 1 Adult</li>
+        
+      </ul>
+      </div>
+      
+        <a asp-action="Booking" asp-controller="Home"> <button class="pricingTable-firstTable_table__getstart" >Book Now</button></a>
+      </div>
+    </li>
+    <li class="pricingTable-firstTable_table">
+      <div class="pricingTable-firstTable_table__wrapper">
+        <h1 class="pricingTable-firstTable_table__header">Double Room</h1>
+      <p class="pricingTable-firstTable_table__pricing"><span>$</span><span>210</span><span>per night</span></p>
+      <ul class="pricingTable-firstTable_table__options">
+        <li>2 Beds</li>
+        <li>Free Wi-Fi</li>
+        <li>Private Bathroom</li>
+        <li>Television</li>
+        <li>24/7 Room Service</li>
+        <li>Max 2 Adults or 1 adult and 1 Child</li>
+      </ul>
+        <a asp-action="Booking" asp-controller="Home"> <button class="pricingTable-firstTable_table__getstart" >Book Now</button></a>
+      </div>
+    </li>
+    <li class="pricingTable-firstTable_table">
+      <div class="pricingTable-firstTable_table__wrapper">
+      <h1 class="pricingTable-firstTable_table__header">Suite Room</h1>
+      <p class="pricingTable-firstTable_table__pricing"><span>$</span><span>250</span><span>per night</span></p>
+      
+        <ul class="pricingTable-firstTable_table__options">
+        <li>King Size Bed</li>
+        <li>Free Wi-Fi</li>
+        <li>Private Bathroom with Jacuzzi</li>
+        <li>Television</li>
+        <li>24/7 Room Service</li>
+        <li>Max 5 Guests</li>
+      </ul>
+        <a asp-action="Booking" asp-controller="Home"> <button class="pricingTable-firstTable_table__getstart" >Book Now</button></a>
+      </div>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
